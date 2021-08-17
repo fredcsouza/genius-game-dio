@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: #646464;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.genius {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 700px;
+    min-width: 700px;
+    min-height: 700px;
+    background-image: radial-gradient(circle at center, black, 87%, white);
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.blue,
+.red,
+.green,
+.yellow {
+    width: 45%;
+    height: 45%;
+    cursor: pointer;
+}
+
+.blue {
+    border-top-left-radius: 100%;
+    background-image: radial-gradient(circle at top left, white, 10%, blue);
+}
+
+.red {
+    border-top-right-radius: 100%;
+    background-image: radial-gradient(circle at top right, white, 10%, red);
+}
+
+.yellow {
+    border-bottom-right-radius: 100%;
+    background-image: radial-gradient(circle at bottom right, white, 10%, yellow);
+}
+
+.green {
+    border-bottom-left-radius: 100%;
+    background-image: radial-gradient(circle at bottom left, white, 10%, green);
+}
+
+.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.menu .titulo {
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 150px 150px 0 0;
+    margin-top: 40px;
+}
+
+.menu .placar {
+    width: 75%;
+    color: white;
+    font-size: 30px;
+    vertical-align: text-bottom;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start {
+    color: white;
+    font-size: 30px;
+    width: 150px;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    border-radius: 50px;
+    text-align: center;
+    line-height: 100%;
+    vertical-align: middle;
+    padding: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.game-over {
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
+}
